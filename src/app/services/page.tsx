@@ -1,15 +1,16 @@
 import Link from "next/link";
-import { ArrowRight, Globe, Bot, Database, Search } from "lucide-react";
+import { ArrowRight, Globe, Bot, Database, Code } from "lucide-react";
 
-export const metadata = { title: "Services | Momently" };
+export const metadata = { title: "Services | Momentumly" };
 
 const services = [
   {
-    id: "website-design",
+    id: "web-development",
     icon: <Globe className="w-8 h-8 text-accent" />,
-    title: "Website Design",
+    title: "Full Stack Web Development",
     description:
-      "We design and develop stunning, responsive websites that captivate users and drive conversions. From landing pages to full-scale platforms.",
+      "We build robust, scalable web applications from front to back. Modern frameworks, performant APIs, and seamless user experiences — all tailored to your business needs.",
+    image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&q=80",
   },
   {
     id: "ai-automation",
@@ -17,20 +18,23 @@ const services = [
     title: "AI & Automation",
     description:
       "Leverage the power of artificial intelligence and automation to streamline your workflows, reduce costs, and scale your business efficiently.",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
   },
   {
-    id: "web-scraping",
+    id: "data-scraping",
     icon: <Database className="w-8 h-8 text-accent" />,
-    title: "Web Scraping",
+    title: "Data Scraping",
     description:
       "Extract valuable data from the web with our reliable, scalable scraping solutions. Get the insights you need to make data-driven decisions.",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
   },
   {
-    id: "seo",
-    icon: <Search className="w-8 h-8 text-accent" />,
-    title: "SEO",
+    id: "software-development",
+    icon: <Code className="w-8 h-8 text-accent" />,
+    title: "Software Development",
     description:
-      "Boost your online visibility and organic traffic with our proven SEO strategies. We optimize every aspect to help you rank higher and reach more customers.",
+      "Custom software solutions engineered for performance and reliability. From desktop apps to complex systems, we deliver production-ready code that scales.",
+    image: "https://images.unsplash.com/photo-1605379399642-870262d3d051?w=800&q=80",
   },
 ];
 
@@ -38,7 +42,7 @@ export default function ServicesPage() {
   return (
     <main className="pt-24 pb-16">
       <section className="max-w-7xl mx-auto px-6 py-16">
-        <h1 className="text-5xl md:text-6xl font-bold mb-6">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-6">
           Our <span className="text-accent">Services</span>
         </h1>
         <p className="text-muted text-lg max-w-2xl leading-relaxed mb-16">
@@ -51,19 +55,29 @@ export default function ServicesPage() {
             <div
               key={service.id}
               id={service.id}
-              className="bg-dark-card border border-dark-border rounded-2xl p-8 hover:border-muted/50 transition"
+              className="bg-dark-card border border-dark-border rounded-2xl overflow-hidden hover:border-muted/50 transition group"
             >
-              <div className="mb-5">{service.icon}</div>
-              <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
-              <p className="text-muted leading-relaxed mb-6">
-                {service.description}
-              </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 text-sm text-accent font-medium hover:gap-3 transition-all"
-              >
-                Get started <ArrowRight size={14} />
-              </Link>
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-dark-card via-dark-card/40 to-transparent" />
+              </div>
+              <div className="p-8">
+                <div className="mb-4">{service.icon}</div>
+                <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
+                <p className="text-muted leading-relaxed mb-6">
+                  {service.description}
+                </p>
+                <Link
+                  href={`/services/${service.id}`}
+                  className="inline-flex items-center gap-2 text-sm text-accent font-medium group-hover:gap-3 transition-all"
+                >
+                  Learn more <ArrowRight size={14} />
+                </Link>
+              </div>
             </div>
           ))}
         </div>

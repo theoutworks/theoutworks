@@ -1,12 +1,16 @@
 import Link from "next/link";
+import { MomentlyLogo } from "./logo";
 
 export function Footer() {
   return (
     <footer className="border-t border-dark-border bg-dark">
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-4 gap-10">
+        <div className="grid md:grid-cols-4 gap-8 md:gap-10">
           <div>
-            <h3 className="text-xl font-bold mb-4">momently</h3>
+            <div className="flex items-center gap-2.5 mb-4">
+              <MomentlyLogo className="w-8 h-8" />
+              <h3 className="text-xl font-bold">momentumly</h3>
+            </div>
             <p className="text-sm text-muted leading-relaxed">
               Crafting unforgettable digital experiences for your brand through
               innovative design, strategy, marketing and storytelling.
@@ -30,10 +34,10 @@ export function Footer() {
               Services
             </h4>
             <ul className="space-y-2 text-sm text-muted">
-              <li><Link href="/services#website-design" className="hover:text-white transition">Website Design</Link></li>
+              <li><Link href="/services#web-development" className="hover:text-white transition">Full Stack Web Development</Link></li>
               <li><Link href="/services#ai-automation" className="hover:text-white transition">AI & Automation</Link></li>
-              <li><Link href="/services#web-scraping" className="hover:text-white transition">Web Scraping</Link></li>
-              <li><Link href="/services#seo" className="hover:text-white transition">SEO</Link></li>
+              <li><Link href="/services#data-scraping" className="hover:text-white transition">Data Scraping</Link></li>
+              <li><Link href="/services#software-development" className="hover:text-white transition">Software Development</Link></li>
             </ul>
           </div>
 
@@ -51,7 +55,7 @@ export function Footer() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-dark-border flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted">
-          <p>&copy; {new Date().getFullYear()} Momently. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Momentumly. All rights reserved.</p>
           <p>Crafted with passion and precision.</p>
         </div>
       </div>

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import { MouseGlow } from "@/components/mouse-glow";
 
 const faqs = [
   {
@@ -27,8 +28,9 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="py-24 bg-dark">
-      <div className="max-w-3xl mx-auto px-6">
+    <section className="relative py-24 bg-dark overflow-hidden">
+      <MouseGlow />
+      <div className="max-w-3xl mx-auto px-6 relative z-[2]">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

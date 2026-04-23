@@ -9,7 +9,7 @@ export default function ContactPage() {
   return (
     <main className="pt-24 pb-16">
       <section className="max-w-7xl mx-auto px-6 py-16">
-        <h1 className="text-5xl md:text-6xl font-bold mb-6">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-6">
           Let&apos;s <span className="text-accent">talk</span>
         </h1>
         <p className="text-muted text-lg max-w-2xl leading-relaxed mb-16">
@@ -83,7 +83,7 @@ export default function ContactPage() {
               {
                 icon: <Mail className="w-5 h-5 text-accent" />,
                 label: "Email",
-                value: "hello@momently.agency",
+                value: "hello@momentumly.agency",
               },
               {
                 icon: <Phone className="w-5 h-5 text-accent" />,

@@ -7,7 +7,7 @@ import { Footer } from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Momently",
+  title: "Momentumly",
   description:
     "Your brand deserves more than just a website — it needs a digital experience that stands out. We craft sleek, responsive, and high-performing websites designed to captivate users and maximize conversions.",
 };
