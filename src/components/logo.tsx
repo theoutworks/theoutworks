@@ -1,4 +1,8 @@
-export function MomentlyLogo({ className = "w-8 h-8" }: { className?: string }) {
+export function OutworksLogo({
+  className = "w-8 h-8",
+}: {
+  className?: string
+}) {
   return (
     <svg
       viewBox="0 0 40 40"
@@ -18,5 +22,5 @@ export function MomentlyLogo({ className = "w-8 h-8" }: { className?: string }) 
         fill="none"
       />
     </svg>
-  );
+  )
 }

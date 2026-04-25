@@ -1,64 +1,114 @@
-import Link from "next/link";
-import { MomentlyLogo } from "./logo";
+import Link from "next/link"
+
+import { OutworksLogo } from "./logo"
 
 export function Footer() {
   return (
-    <footer className="border-t border-dark-border bg-dark">
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-4 gap-8 md:gap-10">
+    <footer className="border-dark-border bg-dark border-t">
+      <div className="mx-auto max-w-7xl px-6 py-16">
+        <div className="grid gap-8 md:grid-cols-4 md:gap-10">
           <div>
-            <div className="flex items-center gap-2.5 mb-4">
-              <MomentlyLogo className="w-8 h-8" />
-              <h3 className="text-xl font-bold">momentumly</h3>
+            <div className="mb-4 flex items-center gap-2.5">
+              <OutworksLogo className="h-8 w-8" />
+              <h3 className="text-xl font-bold">the outworks</h3>
             </div>
-            <p className="text-sm text-muted leading-relaxed">
+            <p className="text-muted text-sm leading-relaxed">
               Crafting unforgettable digital experiences for your brand through
               innovative design, strategy, marketing and storytelling.
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider text-muted">
+            <h4 className="text-muted mb-4 text-sm font-semibold tracking-wider uppercase">
               Navigation
             </h4>
-            <ul className="space-y-2 text-sm text-muted">
-              <li><Link href="/about" className="hover:text-white transition">About Us</Link></li>
-              <li><Link href="/services" className="hover:text-white transition">Services</Link></li>
-              <li><Link href="/case-studies" className="hover:text-white transition">Case Studies</Link></li>
-              <li><Link href="/contact" className="hover:text-white transition">Contact</Link></li>
+            <ul className="text-muted space-y-2 text-sm">
+              <li>
+                <Link href="/about" className="transition hover:text-white">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" className="transition hover:text-white">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/case-studies"
+                  className="transition hover:text-white"
+                >
+                  Case Studies
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="transition hover:text-white">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider text-muted">
+            <h4 className="text-muted mb-4 text-sm font-semibold tracking-wider uppercase">
               Services
             </h4>
-            <ul className="space-y-2 text-sm text-muted">
-              <li><Link href="/services#web-development" className="hover:text-white transition">Full Stack Web Development</Link></li>
-              <li><Link href="/services#ai-automation" className="hover:text-white transition">AI & Automation</Link></li>
-              <li><Link href="/services#data-scraping" className="hover:text-white transition">Data Scraping</Link></li>
-              <li><Link href="/services#software-development" className="hover:text-white transition">Software Development</Link></li>
+            <ul className="text-muted space-y-2 text-sm">
+              <li>
+                <Link
+                  href="/services#web-development"
+                  className="transition hover:text-white"
+                >
+                  Full Stack Web Development
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services#ai-automation"
+                  className="transition hover:text-white"
+                >
+                  AI & Automation
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services#data-scraping"
+                  className="transition hover:text-white"
+                >
+                  Data Scraping
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services#software-development"
+                  className="transition hover:text-white"
+                >
+                  Software Development
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider text-muted">
+            <h4 className="text-muted mb-4 text-sm font-semibold tracking-wider uppercase">
               Open for projects
             </h4>
             <Link
               href="/contact"
-              className="inline-block bg-accent text-black px-5 py-2.5 rounded-full text-sm font-medium hover:bg-accent-dim transition"
+              className="bg-accent hover:bg-accent-dim inline-block rounded-full px-5 py-2.5 text-sm font-medium text-black transition"
             >
               Get in touch
             </Link>
           </div>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-dark-border flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted">
-          <p>&copy; {new Date().getFullYear()} Momentumly. All rights reserved.</p>
+        <div className="border-dark-border text-muted mt-16 flex flex-col items-center justify-between gap-4 border-t pt-8 text-xs md:flex-row">
+          <p>
+            &copy; {new Date().getFullYear()} The Outworks. All rights reserved.
+          </p>
           <p>Crafted with passion and precision.</p>
         </div>
       </div>
     </footer>
-  );
+  )
 }
