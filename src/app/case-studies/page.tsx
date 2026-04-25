@@ -96,7 +96,7 @@ export default function CaseStudiesPage() {
             href="/contact"
             className="bg-accent hover:bg-accent-dim inline-flex items-center gap-2 rounded-full px-7 py-3.5 font-semibold text-black transition"
           >
-            Start your project <ArrowRight size={16} />
+            Book a discovery call <ArrowRight size={16} />
           </Link>
         </div>
       </section>

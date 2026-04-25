@@ -1,20 +1,34 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Link from "next/link"
+import { AnimatePresence, motion } from "framer-motion"
 import { Menu, X } from "lucide-react"
 
 import { OutworksLogo } from "./logo"
 
 export function Navbar() {
   const [open, setOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handler = () => setScrolled(window.scrollY > 20)
+    window.addEventListener("scroll", handler, { passive: true })
+    return () => window.removeEventListener("scroll", handler)
+  }, [])
 
   return (
-    <nav className="bg-dark/80 border-dark-border fixed top-0 right-0 left-0 z-50 border-b backdrop-blur-md">
+    <nav
+      className={`fixed top-0 right-0 left-0 z-50 border-b backdrop-blur-md transition-all duration-300 ${
+        scrolled
+          ? "bg-dark/90 border-dark-border"
+          : "border-transparent bg-transparent"
+      }`}
+    >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
         <Link
           href="/"
-          className="flex items-center gap-2.5 text-xl font-bold tracking-tight"
+          className="font-display flex items-center gap-2.5 text-xl font-bold tracking-tight"
         >
           <OutworksLogo className="h-8 w-8" />
           the outworks
@@ -32,9 +46,9 @@ export function Navbar() {
           </Link>
           <Link
             href="/contact"
-            className="bg-accent hover:bg-accent-dim rounded-full px-4 py-2 font-medium text-black transition"
+            className="btn-press bg-accent hover:bg-accent-dim rounded-full px-5 py-2 font-medium text-black transition"
           >
-            Contact us
+            Book a discovery call
           </Link>
         </div>
 
@@ -43,38 +57,48 @@ export function Navbar() {
         </button>
       </div>
 
-      {open && (
-        <div className="bg-dark border-dark-border flex flex-col gap-4 border-t px-6 pb-6 text-sm md:hidden">
-          <Link
-            href="/about"
-            onClick={() => setOpen(false)}
-            className="text-muted py-2 hover:text-white"
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.2, ease: "easeInOut" }}
+            className="bg-dark border-dark-border overflow-hidden border-t md:hidden"
           >
-            About
-          </Link>
-          <Link
-            href="/services"
-            onClick={() => setOpen(false)}
-            className="text-muted py-2 hover:text-white"
-          >
-            Services
-          </Link>
-          <Link
-            href="/case-studies"
-            onClick={() => setOpen(false)}
-            className="text-muted py-2 hover:text-white"
-          >
-            Case Studies
-          </Link>
-          <Link
-            href="/contact"
-            onClick={() => setOpen(false)}
-            className="bg-accent rounded-full px-4 py-2 text-center font-medium text-black"
-          >
-            Contact us
-          </Link>
-        </div>
-      )}
+            <div className="flex flex-col gap-4 px-6 pt-4 pb-6 text-sm">
+              <Link
+                href="/about"
+                onClick={() => setOpen(false)}
+                className="text-muted py-2 transition hover:text-white"
+              >
+                About
+              </Link>
+              <Link
+                href="/services"
+                onClick={() => setOpen(false)}
+                className="text-muted py-2 transition hover:text-white"
+              >
+                Services
+              </Link>
+              <Link
+                href="/case-studies"
+                onClick={() => setOpen(false)}
+                className="text-muted py-2 transition hover:text-white"
+              >
+                Case Studies
+              </Link>
+              <Link
+                href="/contact"
+                onClick={() => setOpen(false)}
+                className="bg-accent rounded-full px-4 py-2 text-center font-medium text-black"
+              >
+                Book a discovery call
+              </Link>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   )
 }

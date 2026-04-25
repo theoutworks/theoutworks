@@ -95,7 +95,7 @@ export default function AboutPage() {
                 href="/contact"
                 className="bg-accent hover:bg-accent-dim inline-flex items-center gap-2 rounded-full px-6 py-3 font-semibold text-black transition"
               >
-                Work with us <ArrowRight size={16} />
+                Book a discovery call <ArrowRight size={16} />
               </Link>
             </div>
           </div>

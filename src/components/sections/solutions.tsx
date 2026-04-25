@@ -8,25 +8,25 @@ import { MouseGlow } from "@/components/mouse-glow"
 const solutions = [
   {
     icon: <Settings className="text-accent h-6 w-6" />,
-    title: "Tailored solutions",
+    title: "Tailored to your stack",
     description:
-      "We take the time to understand your specific needs, challenges, and goals.",
+      "No cookie-cutter solutions. We learn your tools, constraints, and goals — then build exactly what fits.",
     image:
       "https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&q=80",
   },
   {
     icon: <Lightbulb className="text-accent h-6 w-6" />,
-    title: "Innovative thinking",
+    title: "Forward-thinking engineering",
     description:
-      "We thrive on pushing boundaries, exploring ideas, and staying ahead of trends.",
+      "We push boundaries with modern architectures, AI-first workflows, and tech that keeps you ahead of the curve.",
     image:
       "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&q=80",
   },
   {
     icon: <Users className="text-accent h-6 w-6" />,
-    title: "Collaborative approach",
+    title: "Seamless collaboration",
     description:
-      "From the initial concept to the final delivery, we work closely with you.",
+      "We integrate into your workflow — same tools, same cadence, same standards. It feels like hiring, without the overhead.",
     image:
       "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80",
   },
@@ -43,13 +43,15 @@ export function Solutions() {
           viewport={{ once: true }}
           className="mb-16 text-center"
         >
-          <h2 className="mb-4 text-4xl font-bold md:text-5xl">
+          <p className="text-accent mb-3 text-xs font-medium tracking-widest uppercase">
+            How we work
+          </p>
+          <h2 className="font-display mb-4 text-4xl font-bold md:text-5xl">
             Impactful solutions
           </h2>
           <p className="text-muted mx-auto max-w-2xl leading-relaxed">
-            We focus on more than just delivering a service; we create solutions
-            that make a difference. Each project is crafted to align with your
-            goals, bringing impact to the forefront.
+            We don&apos;t just deliver code — we deliver outcomes. Each project
+            is designed to move your business forward.
           </p>
         </motion.div>
 
@@ -61,7 +63,7 @@ export function Solutions() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="bg-dark-card border-dark-border hover:border-muted/50 group overflow-hidden rounded-2xl border transition"
+              className="card-glow bg-dark-card border-dark-border group overflow-hidden rounded-2xl border transition"
             >
               <div className="relative h-40 overflow-hidden">
                 <img
@@ -72,10 +74,12 @@ export function Solutions() {
                 <div className="from-dark-card absolute inset-0 bg-gradient-to-t to-transparent" />
               </div>
               <div className="p-8 text-center">
-                <div className="bg-accent/10 border-dark-border bg-dark-card relative z-10 mx-auto -mt-12 mb-5 flex h-14 w-14 items-center justify-center rounded-2xl border">
+                <div className="bg-accent/10 border-dark-border bg-dark-card group-hover:border-accent/30 relative z-10 mx-auto -mt-12 mb-5 flex h-14 w-14 items-center justify-center rounded-2xl border transition-colors">
                   {item.icon}
                 </div>
-                <h3 className="mb-3 text-lg font-bold">{item.title}</h3>
+                <h3 className="font-display mb-3 text-lg font-bold">
+                  {item.title}
+                </h3>
                 <p className="text-muted text-sm leading-relaxed">
                   {item.description}
                 </p>

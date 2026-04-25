@@ -1,28 +1,47 @@
 import Link from "next/link"
+import { ExternalLink, Globe, Mail } from "lucide-react"
 
 import { OutworksLogo } from "./logo"
+
+const socialLinks = [
+  { icon: <Globe size={16} />, href: "#", label: "Website" },
+  { icon: <ExternalLink size={16} />, href: "#", label: "LinkedIn" },
+  { icon: <Mail size={16} />, href: "#", label: "Email" },
+]
 
 export function Footer() {
   return (
     <footer className="border-dark-border bg-dark border-t">
       <div className="mx-auto max-w-7xl px-6 py-16">
-        <div className="grid gap-8 md:grid-cols-4 md:gap-10">
+        <div className="grid gap-10 md:grid-cols-4 md:gap-10">
           <div>
             <div className="mb-4 flex items-center gap-2.5">
               <OutworksLogo className="h-8 w-8" />
-              <h3 className="text-xl font-bold">the outworks</h3>
+              <h3 className="font-display text-xl font-bold">the outworks</h3>
             </div>
-            <p className="text-muted text-sm leading-relaxed">
-              Crafting unforgettable digital experiences for your brand through
-              innovative design, strategy, marketing and storytelling.
+            <p className="text-muted mb-6 text-sm leading-relaxed">
+              Outsource your work. We handle engineering, automation, and
+              digital operations — so you can focus on what matters.
             </p>
+            <div className="flex gap-3">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  aria-label={social.label}
+                  className="bg-dark-card border-dark-border text-muted hover:border-accent/50 hover:text-accent flex h-9 w-9 items-center justify-center rounded-full border transition"
+                >
+                  {social.icon}
+                </a>
+              ))}
+            </div>
           </div>
 
           <div>
             <h4 className="text-muted mb-4 text-sm font-semibold tracking-wider uppercase">
               Navigation
             </h4>
-            <ul className="text-muted space-y-2 text-sm">
+            <ul className="text-muted space-y-2.5 text-sm">
               <li>
                 <Link href="/about" className="transition hover:text-white">
                   About Us
@@ -53,7 +72,7 @@ export function Footer() {
             <h4 className="text-muted mb-4 text-sm font-semibold tracking-wider uppercase">
               Services
             </h4>
-            <ul className="text-muted space-y-2 text-sm">
+            <ul className="text-muted space-y-2.5 text-sm">
               <li>
                 <Link
                   href="/services#web-development"
@@ -91,13 +110,16 @@ export function Footer() {
 
           <div>
             <h4 className="text-muted mb-4 text-sm font-semibold tracking-wider uppercase">
-              Open for projects
+              Ready to outsource?
             </h4>
+            <p className="text-muted mb-4 text-sm leading-relaxed">
+              Let&apos;s talk about what we can take off your plate.
+            </p>
             <Link
               href="/contact"
-              className="bg-accent hover:bg-accent-dim inline-block rounded-full px-5 py-2.5 text-sm font-medium text-black transition"
+              className="btn-press bg-accent hover:bg-accent-dim inline-block rounded-full px-5 py-2.5 text-sm font-medium text-black transition"
             >
-              Get in touch
+              Book a discovery call
             </Link>
           </div>
         </div>
@@ -106,7 +128,9 @@ export function Footer() {
           <p>
             &copy; {new Date().getFullYear()} The Outworks. All rights reserved.
           </p>
-          <p>Crafted with passion and precision.</p>
+          <p className="text-muted/60">
+            Outsource your work. Scale your business.
+          </p>
         </div>
       </div>
     </footer>
