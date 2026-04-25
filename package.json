@@ -7,7 +7,7 @@
     "dev": "infisical run --env=dev -- next dev",
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
-    "lint": "eslint",
+    "lint": "eslint --max-warnings=0",
     "start": "next start",
     "worker:build": "opennextjs-cloudflare build",
     "worker:deploy": "opennextjs-cloudflare deploy",

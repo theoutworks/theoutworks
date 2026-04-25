@@ -25,7 +25,7 @@ jobs:
           method: "oidc"
           identity-id: "cca7d28a-a556-48e4-8425-9baaf5eceb09"
           domain: "https://infisical.guneet.dev"
-          project-slug: "theoutworks"
+          project-slug: "theoutworks-wd28"
           env-slug: "action"
 
       - name: Install pnpm
