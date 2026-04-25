@@ -5,7 +5,7 @@ import { env } from "@/env"
 import { ContactForm } from "./contact-form"
 
 export default function ContactPage() {
-  const contactEmail = env.SMTP_TO
+  const contactEmail = env.ACS_TO
 
   return (
     <main className="pt-24 pb-16">
