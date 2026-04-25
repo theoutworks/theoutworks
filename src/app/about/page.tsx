@@ -68,7 +68,7 @@ export default function AboutPage() {
               serves a purpose.
             </p>
           </div>
-          <div className="mt-8 relative h-48 flex-shrink-0 overflow-hidden rounded-2xl sm:h-64 md:mt-0 md:w-96">
+          <div className="relative mt-8 h-48 flex-shrink-0 overflow-hidden rounded-2xl sm:h-64 md:mt-0 md:w-96">
             <Image
               src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80"
               alt="Creative workspace"
@@ -81,7 +81,7 @@ export default function AboutPage() {
         <div id="meet-the-team" className="mb-8">
           <h2 className="mb-6 text-3xl font-bold">Meet the Team</h2>
           <div className="items-center gap-12 md:flex">
-            <div className="mt-0 mb-8 relative h-48 flex-shrink-0 overflow-hidden rounded-2xl sm:h-64 md:mb-0 md:w-96">
+            <div className="relative mt-0 mb-8 h-48 flex-shrink-0 overflow-hidden rounded-2xl sm:h-64 md:mb-0 md:w-96">
               <Image
                 src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80"
                 alt="Team collaboration"

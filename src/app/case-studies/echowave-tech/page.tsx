@@ -1,11 +1,5 @@
 import Link from "next/link"
-import {
-  ArrowRight,
-  Globe,
-  TrendingUp,
-  Users,
-  Zap,
-} from "lucide-react"
+import { ArrowRight, Globe, TrendingUp, Users, Zap } from "lucide-react"
 
 export const metadata = { title: "EchoWave Tech Case Study | The Outworks" }
 

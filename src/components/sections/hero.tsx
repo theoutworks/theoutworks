@@ -206,7 +206,7 @@ export function Hero() {
                   "https://randomuser.me/api/portraits/women/68.jpg",
                   "https://randomuser.me/api/portraits/men/75.jpg",
                   "https://randomuser.me/api/portraits/women/90.jpg",
-                 ].map((src, i) => (
+                ].map((src, i) => (
                   <Image
                     key={i}
                     src={src}

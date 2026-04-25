@@ -1,11 +1,5 @@
 import Link from "next/link"
-import {
-  ArrowRight,
-  Target,
-  TrendingUp,
-  Users,
-  Zap,
-} from "lucide-react"
+import { ArrowRight, Target, TrendingUp, Users, Zap } from "lucide-react"
 
 export const metadata = {
   title: "GreenField Analytics Case Study | The Outworks",
