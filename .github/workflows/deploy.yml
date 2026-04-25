@@ -7,6 +7,10 @@ on:
     branches: [main]
   workflow_dispatch:
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -14,6 +18,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Fetch secrets from Infisical
+        uses: Infisical/secrets-action@v1.0.9
+        with:
+          method: "oidc"
+          identity-id: "cca7d28a-a556-48e4-8425-9baaf5eceb09"
+          project-slug: "theoutworks"
+          env-slug: "action"
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
@@ -26,20 +38,11 @@ jobs:
           node-version: 20
           cache: pnpm
 
-      - name: Install Infisical CLI
-        run: |
-          curl -1sLf 'https://artifacts.infisical.com/repos/deb/setup.deb.sh' | sudo -E bash
-          sudo apt-get update && sudo apt-get install -y infisical
-
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
       - name: Build
-        run: infisical run --env=prod -- pnpm build:worker
-        env:
-          INFISICAL_TOKEN: ${{ secrets.INFISICAL_TOKEN }}
+        run: pnpm build:worker
 
       - name: Deploy to Cloudflare Workers
-        run: infisical run --env=prod -- npx wrangler deploy
-        env:
-          INFISICAL_TOKEN: ${{ secrets.INFISICAL_TOKEN }}
+        run: npx wrangler deploy
