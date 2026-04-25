@@ -48,8 +48,8 @@ export async function submitContact(
     })
 
     await transporter.sendMail({
-      from: env.EMAIL_FROM,
-      to: env.EMAIL_TO,
+      from: env.SMTP_FROM,
+      to: env.SMTP_TO,
       replyTo: email,
       subject: `New inquiry from ${name}`,
       text: [`Name: ${name}`, `Email: ${email}`, ``, `Message:`, message].join(
