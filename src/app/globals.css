@@ -3,12 +3,18 @@
 @theme {
   --color-dark: #0a0a0a;
   --color-dark-card: #111111;
+  --color-dark-card-hover: #161616;
   --color-dark-border: #222222;
   --color-accent: #c8ff00;
   --color-accent-dim: #a8d600;
+  --color-accent-glow: rgba(200, 255, 0, 0.15);
   --color-muted: #888888;
+  --color-muted-light: #aaaaaa;
   --color-light: #f5f5f5;
+  --color-success: #22c55e;
+  --color-error: #ef4444;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
 }
 
 html {
@@ -26,4 +32,44 @@ body {
 ::selection {
   background-color: var(--color-accent);
   color: black;
+}
+
+/* Gradient border utility for cards */
+.card-glow {
+  position: relative;
+}
+
+.card-glow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    transparent 40%,
+    var(--color-accent-glow) 50%,
+    transparent 60%
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.card-glow:hover::before {
+  opacity: 1;
+}
+
+/* Button press effect */
+.btn-press {
+  transition: all 0.2s ease;
+}
+
+.btn-press:active {
+  transform: scale(0.97);
 }

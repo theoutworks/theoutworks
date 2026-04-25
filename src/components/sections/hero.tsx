@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, CheckCircle } from "lucide-react"
 
 import { MouseGlow } from "@/components/mouse-glow"
 
@@ -18,7 +18,7 @@ function GridBackground() {
           scale: [1, 1.2, 0.9, 1],
         }}
         transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
-        className="bg-accent/[0.04] absolute -top-1/4 left-1/4 h-[600px] w-[600px] rounded-full blur-[120px]"
+        className="bg-accent/[0.06] absolute -top-1/4 left-1/4 h-[600px] w-[600px] rounded-full blur-[120px]"
       />
       <motion.div
         animate={{
@@ -27,7 +27,7 @@ function GridBackground() {
           scale: [1, 0.85, 1.15, 1],
         }}
         transition={{ duration: 25, repeat: Infinity, ease: "easeInOut" }}
-        className="bg-accent/[0.03] absolute -top-1/3 right-1/4 h-[500px] w-[500px] rounded-full blur-[100px]"
+        className="bg-accent/[0.04] absolute -top-1/3 right-1/4 h-[500px] w-[500px] rounded-full blur-[100px]"
       />
       <motion.div
         animate={{
@@ -35,20 +35,20 @@ function GridBackground() {
           y: [0, -40, 60, 0],
         }}
         transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
-        className="bg-accent/[0.02] absolute top-1/2 left-1/2 h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-[80px]"
+        className="bg-accent/[0.03] absolute top-1/2 left-1/2 h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-[80px]"
       />
 
       {/* Grid pattern */}
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: `linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px)`,
+          backgroundImage: `linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px)`,
           backgroundSize: "60px 60px",
         }}
       />
 
       {/* Radial fade over grid */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_0%,_var(--color-dark)_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_0%,_var(--color-dark)_70%)]" />
     </div>
   )
 }
@@ -165,6 +165,12 @@ function MouseGlowHero() {
   )
 }
 
+const VALUE_PROPS = [
+  "Software Development",
+  "AI & Automation",
+  "Operations & Strategy",
+]
+
 export function Hero() {
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-16">
@@ -175,80 +181,168 @@ export function Hero() {
           alt=""
           className="h-full w-full object-cover"
         />
-        <div className="bg-dark/75 absolute inset-0" />
+        <div className="bg-dark/80 absolute inset-0" />
       </div>
 
       <GridBackground />
       <FloatingParticles />
       <MouseGlowHero />
 
-      <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="border-dark-border text-muted mb-8 inline-flex items-center gap-2 rounded-full border px-2 py-1.5 pr-4 text-xs"
-        >
-          {/* Overlapping avatar stack */}
-          <div className="flex -space-x-2">
-            {[
-              "https://randomuser.me/api/portraits/women/44.jpg",
-              "https://randomuser.me/api/portraits/men/32.jpg",
-              "https://randomuser.me/api/portraits/women/68.jpg",
-              "https://randomuser.me/api/portraits/men/75.jpg",
-              "https://randomuser.me/api/portraits/women/90.jpg",
-            ].map((src, i) => (
-              <img
-                key={i}
-                src={src}
-                alt=""
-                className="border-dark h-7 w-7 rounded-full border-2 object-cover"
-              />
-            ))}
+      <div className="relative z-10 mx-auto max-w-6xl px-6">
+        <div className="grid items-center gap-12 lg:grid-cols-2">
+          {/* Left column — copy */}
+          <div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="border-dark-border text-muted mb-8 inline-flex items-center gap-2 rounded-full border px-2 py-1.5 pr-4 text-xs"
+            >
+              {/* Overlapping avatar stack */}
+              <div className="flex -space-x-2">
+                {[
+                  "https://randomuser.me/api/portraits/women/44.jpg",
+                  "https://randomuser.me/api/portraits/men/32.jpg",
+                  "https://randomuser.me/api/portraits/women/68.jpg",
+                  "https://randomuser.me/api/portraits/men/75.jpg",
+                  "https://randomuser.me/api/portraits/women/90.jpg",
+                ].map((src, i) => (
+                  <img
+                    key={i}
+                    src={src}
+                    alt=""
+                    className="border-dark h-7 w-7 rounded-full border-2 object-cover"
+                  />
+                ))}
+              </div>
+              <span className="bg-accent h-2 w-2 animate-pulse rounded-full" />
+              Trusted by 200+ clients
+            </motion.div>
+
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.1 }}
+              className="font-display mb-6 text-4xl leading-[1.1] font-bold tracking-tight sm:text-5xl md:text-7xl"
+            >
+              Outsource <span className="text-accent">your work.</span>
+              <br />
+              <span className="text-muted-light text-2xl font-medium tracking-normal sm:text-3xl md:text-4xl">
+                Focus on what matters.
+              </span>
+            </motion.h1>
+
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+              className="text-muted mb-8 max-w-lg text-lg leading-relaxed"
+            >
+              We handle the engineering, automation, and digital operations — so
+              your team can focus on strategy, customers, and growth.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.3 }}
+              className="mb-10 flex flex-wrap items-center gap-4"
+            >
+              <Link
+                href="/contact"
+                className="btn-press bg-accent hover:bg-accent-dim flex items-center gap-2 rounded-full px-7 py-3.5 font-semibold text-black transition"
+              >
+                Book a discovery call <ArrowRight size={16} />
+              </Link>
+              <Link
+                href="/services"
+                className="btn-press border-dark-border hover:border-muted rounded-full border px-7 py-3.5 font-medium text-white transition"
+              >
+                Explore services
+              </Link>
+            </motion.div>
+
+            {/* Value props */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.7, delay: 0.5 }}
+              className="flex flex-wrap gap-x-6 gap-y-2"
+            >
+              {VALUE_PROPS.map((prop) => (
+                <div
+                  key={prop}
+                  className="text-muted flex items-center gap-2 text-sm"
+                >
+                  <CheckCircle size={14} className="text-accent" />
+                  {prop}
+                </div>
+              ))}
+            </motion.div>
           </div>
-          <span className="bg-accent h-2 w-2 animate-pulse rounded-full" />
-          Trusted by 200+ clients
-        </motion.div>
 
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.1 }}
-          className="mb-6 text-3xl leading-tight font-bold tracking-tight sm:text-5xl md:text-7xl"
-        >
-          Elevate your brand with{" "}
-          <span className="text-accent">digital marketing</span>
-        </motion.h1>
-
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          className="text-muted mx-auto mb-10 max-w-2xl text-lg leading-relaxed md:text-xl"
-        >
-          Crafting unforgettable digital experiences for your brand through
-          innovative design, strategy, marketing and storytelling.
-        </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.3 }}
-          className="flex flex-wrap items-center justify-center gap-4"
-        >
-          <Link
-            href="/contact"
-            className="bg-accent hover:bg-accent-dim flex items-center gap-2 rounded-full px-7 py-3.5 font-semibold text-black transition"
+          {/* Right column — stats card */}
+          <motion.div
+            initial={{ opacity: 0, y: 40, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="hidden lg:block"
           >
-            Book a discovery call <ArrowRight size={16} />
-          </Link>
-          <Link
-            href="/services"
-            className="border-dark-border hover:border-muted rounded-full border px-7 py-3.5 font-medium text-white transition"
-          >
-            Explore services
-          </Link>
-        </motion.div>
+            <div className="card-glow bg-dark-card/80 border-dark-border space-y-6 rounded-3xl border p-8 backdrop-blur-sm">
+              <div className="border-dark-border flex items-center gap-3 border-b pb-6">
+                <div className="bg-accent/10 flex h-10 w-10 items-center justify-center rounded-xl">
+                  <div className="bg-accent h-3 w-3 rounded-full" />
+                </div>
+                <div>
+                  <p className="font-display text-sm font-semibold">
+                    Project Dashboard
+                  </p>
+                  <p className="text-muted text-xs">Live metrics</p>
+                </div>
+              </div>
+
+              {[
+                { label: "Projects Delivered", value: "200+", bar: 92 },
+                { label: "Client Retention", value: "96%", bar: 96 },
+                { label: "On-Time Delivery", value: "98%", bar: 98 },
+              ].map((stat) => (
+                <div key={stat.label}>
+                  <div className="mb-2 flex items-center justify-between text-sm">
+                    <span className="text-muted">{stat.label}</span>
+                    <span className="font-display font-bold">{stat.value}</span>
+                  </div>
+                  <div className="bg-dark-border h-2 overflow-hidden rounded-full">
+                    <motion.div
+                      initial={{ width: 0 }}
+                      animate={{ width: `${stat.bar}%` }}
+                      transition={{
+                        duration: 1.2,
+                        delay: 0.6,
+                        ease: "easeOut",
+                      }}
+                      className="bg-accent h-full rounded-full"
+                    />
+                  </div>
+                </div>
+              ))}
+
+              <div className="border-dark-border grid grid-cols-3 gap-4 border-t pt-6">
+                {[
+                  { label: "Avg. Turnaround", value: "6 wks" },
+                  { label: "Team Size", value: "15+" },
+                  { label: "Tech Stacks", value: "12+" },
+                ].map((item) => (
+                  <div key={item.label} className="text-center">
+                    <p className="font-display text-lg font-bold">
+                      {item.value}
+                    </p>
+                    <p className="text-muted text-xs">{item.label}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+        </div>
       </div>
     </section>
   )
