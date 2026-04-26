@@ -24,7 +24,9 @@ export function CTA() {
               src="https://images.unsplash.com/photo-1497215842964-222b430dc094?w=1200&q=80"
               alt=""
               fill
-              className="object-cover opacity-15"
+               sizes="(max-width: 1280px) 100vw, 1280px"
+               loading="eager"
+               className="object-cover opacity-15"
             />
             <div className="from-dark-card via-dark-card/80 to-dark-card/60 absolute inset-0 bg-gradient-to-t" />
           </div>

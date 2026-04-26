@@ -17,10 +17,6 @@
   --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: var(--color-dark);
   color: white;

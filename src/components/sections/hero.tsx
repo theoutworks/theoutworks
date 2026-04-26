@@ -179,7 +179,8 @@ export function Hero() {
           src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920&q=80"
           alt=""
           fill
-          className="object-cover"
+           sizes="100vw"
+           className="object-cover"
         />
         <div className="bg-dark/80 absolute inset-0" />
       </div>
