@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "SKIP_ENV_VALIDATION=1 next build",
-    "dev": "infisical run --env=dev -- next dev",
+    "dev": "infisical run --env=dev -- next dev --webpack",
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
     "lint": "eslint --max-warnings=0",
