@@ -70,7 +70,8 @@ export function Solutions() {
                 <Image
                   src={item.image}
                   alt={item.title}
-                  fill
+                   fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="from-dark-card absolute inset-0 bg-gradient-to-t to-transparent" />

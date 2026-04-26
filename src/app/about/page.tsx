@@ -12,7 +12,8 @@ export default function AboutPage() {
         <Image
           src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1400&q=80"
           alt="Team working together"
-          fill
+                     fill
+          sizes="100vw"
           className="object-cover"
         />
         <div className="from-dark via-dark/70 to-dark/30 absolute inset-0 bg-gradient-to-t" />
@@ -72,7 +73,8 @@ export default function AboutPage() {
             <Image
               src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80"
               alt="Creative workspace"
-              fill
+                             fill
+              sizes="(max-width: 768px) 100vw, 384px"
               className="object-cover"
             />
           </div>
@@ -85,7 +87,8 @@ export default function AboutPage() {
               <Image
                 src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80"
                 alt="Team collaboration"
-                fill
+                 fill
+                sizes="(max-width: 768px) 100vw, 384px"
                 className="object-cover"
               />
             </div>

@@ -98,7 +98,8 @@ export function About() {
                 <Image
                   src={card.image}
                   alt={card.title}
-                  fill
+                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="from-dark-card via-dark-card/40 absolute inset-0 bg-gradient-to-t to-transparent" />
@@ -163,7 +164,8 @@ export function About() {
             <Image
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80"
               alt="Team collaboration"
-              fill
+                             fill
+              sizes="(max-width: 768px) 100vw, 320px"
               className="object-cover"
             />
             <div className="from-dark-card absolute inset-0 hidden bg-gradient-to-r via-transparent to-transparent md:block" />
