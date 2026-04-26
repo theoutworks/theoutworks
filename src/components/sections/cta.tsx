@@ -53,7 +53,7 @@ export function CTA() {
                 Book a discovery call <ArrowRight size={18} />
               </Link>
               <Link
-                href="/case-studies"
+                href="/projects"
                 className="btn-press border-dark-border hover:border-muted inline-flex items-center gap-2 rounded-full border px-8 py-4 text-lg font-medium text-white transition"
               >
                 See our work

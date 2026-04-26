@@ -38,7 +38,7 @@ Server-only env vars validated in `src/env.ts` via `@t3-oss/env-nextjs` + Zod. S
 
 Marketing site. Single-package, not a monorepo.
 
-- `src/app/` — App Router pages: `/`, `/about`, `/contact`, `/services/*`, `/case-studies/*`
+- `src/app/` — App Router pages: `/`, `/about`, `/contact`, `/services/*`, `/projects/*`
 - `src/components/` — shared components and homepage `sections/`
 - `src/app/contact/action.ts` — server action sending email via Azure Communication Services (the only backend logic)
 - Path alias: `@/*` → `./src/*`

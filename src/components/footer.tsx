@@ -54,10 +54,10 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/case-studies"
+                  href="/projects"
                   className="transition hover:text-white"
                 >
-                  Case Studies
+                  Projects
                 </Link>
               </li>
               <li>

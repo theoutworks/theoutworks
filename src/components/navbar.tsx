@@ -41,8 +41,8 @@ export function Navbar() {
           <Link href="/services" className="transition hover:text-white">
             Services
           </Link>
-          <Link href="/case-studies" className="transition hover:text-white">
-            Case Studies
+          <Link href="/projects" className="transition hover:text-white">
+            Projects
           </Link>
           <Link
             href="/contact"
@@ -82,11 +82,11 @@ export function Navbar() {
                 Services
               </Link>
               <Link
-                href="/case-studies"
+                href="/projects"
                 onClick={() => setOpen(false)}
                 className="text-muted py-2 transition hover:text-white"
               >
-                Case Studies
+                Projects
               </Link>
               <Link
                 href="/contact"
