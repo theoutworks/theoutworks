@@ -18,15 +18,15 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 ## Commands
 
-| Task | Command |
-|---|---|
-| Dev server | `pnpm dev` (requires Infisical CLI + auth) |
-| Build | `pnpm build` |
-| Lint | `pnpm lint` (eslint, zero warnings) |
-| Format check | `pnpm format:check` |
-| Format fix | `pnpm format:write` |
-| Worker build | `pnpm worker:build` |
-| Worker deploy | `pnpm worker:deploy` |
+| Task          | Command                                    |
+| ------------- | ------------------------------------------ |
+| Dev server    | `pnpm dev` (requires Infisical CLI + auth) |
+| Build         | `pnpm build`                               |
+| Lint          | `pnpm lint` (eslint, zero warnings)        |
+| Format check  | `pnpm format:check`                        |
+| Format fix    | `pnpm format:write`                        |
+| Worker build  | `pnpm worker:build`                        |
+| Worker deploy | `pnpm worker:deploy`                       |
 
 CI runs `format:check` then `lint` on every push/PR. There are **no tests**.
 

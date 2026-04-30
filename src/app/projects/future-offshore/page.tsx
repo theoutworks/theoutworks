@@ -24,8 +24,8 @@ export default function FutureOffshorePage() {
           Client: <span className="text-white">Future Offshore</span>
         </p>
         <p className="text-muted mb-12 text-lg leading-relaxed">
-          A multi-page corporate website for an offshore engineering company with
-          20+ years of experience in pipelay, cable lay, subsea tools, and
+          A multi-page corporate website for an offshore engineering company
+          with 20+ years of experience in pipelay, cable lay, subsea tools, and
           project delivery — their first-ever web presence.
         </p>
 
