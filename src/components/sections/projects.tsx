@@ -13,7 +13,7 @@ const projects = [
     client: "Skylets",
     category: "Automation & Scraping",
     description:
-      "End-to-end scraping and upload pipeline for the Alto property platform — eliminating days of manual work across hundreds of properties in 15+ UK cities.",
+      "End-to-end scraping and upload pipeline for the Alto property platform, eliminating days of manual work across hundreds of properties in 15+ UK cities.",
   },
   {
     slug: "future-offshore",
@@ -21,7 +21,7 @@ const projects = [
     client: "Future Offshore",
     category: "Web Development",
     description:
-      "Full corporate web presence for an offshore engineering firm — designed, built, and deployed to the edge on Cloudflare Workers.",
+      "Full corporate web presence for an offshore engineering firm. Designed, built, and deployed to the edge on Cloudflare Workers.",
   },
 ]
 
@@ -43,7 +43,7 @@ export function Projects() {
             Recent projects
           </h2>
           <p className="text-muted mx-auto max-w-xl leading-relaxed">
-            Real work we&apos;ve delivered for real clients.
+            Here&apos;s some of the work we&apos;ve shipped recently.
           </p>
         </motion.div>
 

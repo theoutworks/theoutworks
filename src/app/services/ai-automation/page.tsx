@@ -16,37 +16,37 @@ const features = [
     icon: <Brain className="text-accent h-6 w-6" />,
     title: "Intelligent Workflows",
     description:
-      "We design AI-powered workflows that think, adapt, and execute — replacing hours of manual work with smart automation.",
+      "We map out your manual processes and turn them into automated workflows that run without babysitting.",
   },
   {
     icon: <Bot className="text-accent h-6 w-6" />,
     title: "Custom AI Agents",
     description:
-      "Purpose-built AI agents that handle customer support, data processing, content generation, and more — 24/7.",
+      "AI agents that handle support tickets, process documents, generate content, or route leads. Running around the clock so your team doesn't have to.",
   },
   {
     icon: <Plug className="text-accent h-6 w-6" />,
     title: "Seamless Integration",
     description:
-      "We plug into your existing tools — CRMs, ERPs, communication platforms — without forcing migrations or new software.",
+      "We connect to your CRM, ERP, Slack, email, whatever you use. No forced migrations, no new platforms to learn.",
   },
   {
     icon: <Clock className="text-accent h-6 w-6" />,
     title: "Time Savings",
     description:
-      "Automate repetitive tasks and free up your team to focus on high-value work that actually moves the needle.",
+      "Get hours back every week. Automate the repetitive stuff so your team can focus on work that actually needs a human.",
   },
   {
     icon: <BarChart3 className="text-accent h-6 w-6" />,
     title: "Data-Driven Decisions",
     description:
-      "AI models that analyze your data in real-time, surfacing insights and recommendations you can act on immediately.",
+      "Models that analyze your data in real time and surface insights you can act on. Not another dashboard nobody checks.",
   },
   {
     icon: <Workflow className="text-accent h-6 w-6" />,
     title: "Process Optimization",
     description:
-      "We audit your operations, identify bottlenecks, and deploy automation where it delivers the highest ROI.",
+      "We audit your operations, find the bottlenecks, and automate where it makes the biggest difference.",
   },
 ]
 
@@ -75,15 +75,15 @@ export default function AIAutomationPage() {
             AI & <span className="text-accent">Automation</span>
           </h1>
           <p className="text-muted mb-8 text-lg leading-relaxed">
-            Leverage the power of artificial intelligence and automation to
-            streamline your workflows, reduce costs, and scale your business
-            efficiently.
+            Spending hours on tasks that should take minutes? We build AI agents
+            and automation workflows that do the repetitive work for you,
+            plugged into the tools you already use.
           </p>
           <Link
             href="/contact"
             className="bg-accent hover:bg-accent-dim inline-flex items-center gap-2 rounded-full px-7 py-3.5 font-semibold text-black transition"
           >
-            Start your project <ArrowRight size={16} />
+            Tell us what you want to automate <ArrowRight size={16} />
           </Link>
         </div>
 
@@ -127,11 +127,11 @@ export default function AIAutomationPage() {
         {/* CTA */}
         <div className="bg-dark-card border-dark-border rounded-3xl border p-6 text-center sm:p-8 md:p-12">
           <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-            Ready to automate your operations?
+            Tired of doing the same thing manually?
           </h2>
           <p className="text-muted mx-auto mb-8 max-w-xl">
-            Let&apos;s identify the highest-impact automation opportunities in
-            your business.
+            Tell us what&apos;s eating up your team&apos;s time and we&apos;ll
+            figure out how to automate it.
           </p>
           <Link
             href="/contact"

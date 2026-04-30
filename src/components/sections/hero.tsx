@@ -165,9 +165,9 @@ function MouseGlowHero() {
 }
 
 const VALUE_PROPS = [
-  "Software Development",
+  "Web Apps & Software",
   "AI & Automation",
-  "Operations & Strategy",
+  "Data Pipelines & Scraping",
 ]
 
 export function Hero() {
@@ -198,7 +198,7 @@ export function Hero() {
           Outsource <span className="text-accent">your work.</span>
           <br />
           <span className="text-muted-light text-2xl font-medium tracking-normal sm:text-3xl md:text-4xl">
-            Focus on what matters.
+            We build it. You run the business.
           </span>
         </motion.h1>
 
@@ -208,8 +208,8 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="text-muted mx-auto mb-8 max-w-xl text-lg leading-relaxed"
         >
-          We handle the engineering, automation, and digital operations — so
-          your team can focus on strategy, customers, and growth.
+          We take engineering, automation, and ops off your plate so your team
+          can spend time on strategy, customers, and growth.
         </motion.p>
 
         <motion.div

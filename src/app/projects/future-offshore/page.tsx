@@ -24,9 +24,10 @@ export default function FutureOffshorePage() {
           Client: <span className="text-white">Future Offshore</span>
         </p>
         <p className="text-muted mb-12 text-lg leading-relaxed">
-          A multi-page corporate website for an offshore engineering company
-          with 20+ years of experience in pipelay, cable lay, subsea tools, and
-          project delivery — their first-ever web presence.
+          An offshore engineering company with 20+ years of experience in
+          pipelay, cable lay, and subsea tools had never had a website. We
+          designed, built, and deployed their entire corporate web presence from
+          scratch.
         </p>
 
         {/* Content */}
@@ -36,11 +37,11 @@ export default function FutureOffshorePage() {
               <Globe className="text-accent h-6 w-6" /> The Challenge
             </h2>
             <p className="text-muted leading-relaxed">
-              Future Offshore had over two decades of industry experience but no
-              web presence. They needed a professional, modern website that
-              communicated their expertise across 8 service areas, established
-              credibility with potential clients, and provided a working contact
-              pipeline — all designed, built, and deployed from scratch.
+              Future Offshore had two decades of industry credibility but zero
+              online presence. They needed a site that communicated their
+              expertise across 8 service areas, looked professional enough to
+              land enterprise clients, and had a working contact pipeline, all
+              built from nothing.
             </p>
           </div>
 
@@ -49,16 +50,15 @@ export default function FutureOffshorePage() {
               <Zap className="text-accent h-6 w-6" /> Our Approach
             </h2>
             <p className="text-muted mb-4 leading-relaxed">
-              We handled the full project end-to-end — design, development, and
-              deployment:
+              We owned the full project, design through deployment:
             </p>
             <ul className="space-y-3">
               {[
-                "Multi-page marketing site with home, about, 8 dynamic service pages, and contact",
-                "Animated UI with Framer Motion transitions, custom local fonts, and responsive design",
-                "Server-side contact form with Zod validation and SMTP delivery via Azure Communication Services",
-                "Edge-deployed on Cloudflare Workers via OpenNext for global low-latency performance",
-                "Full CI/CD pipeline with GitHub Actions — format check, lint, build, and deploy with Infisical secrets management",
+                "Multi-page site covering home, about, 8 service pages, and contact, each tailored to a different audience",
+                "Polished UI with Framer Motion animations, custom fonts, and responsive design that works on every device",
+                "Server-side contact form with Zod validation and email delivery via Azure Communication Services. Leads go straight to the team",
+                "Deployed to the edge on Cloudflare Workers via OpenNext for fast load times globally, no server to manage",
+                "Full CI/CD through GitHub Actions: format, lint, build, and deploy on every push, with secrets managed through Infisical",
               ].map((item) => (
                 <li
                   key={item}
@@ -77,10 +77,10 @@ export default function FutureOffshorePage() {
             </h2>
             <ul className="space-y-3">
               {[
-                "First-ever corporate web presence for an established offshore engineering firm",
-                "Global edge deployment — low-latency performance without a traditional server",
-                "Working contact pipeline connecting potential clients directly to the team",
-                "Production CI/CD delivering automated, repeatable deployments on every push to main",
+                "A company with 20+ years of experience finally has a web presence that matches their reputation",
+                "Potential clients can now find them, learn about their services, and get in touch, all in one place",
+                "Edge deployment means the site loads fast from anywhere in the world without a traditional server",
+                "Automated CI/CD means the team can update content and ship changes without calling a developer",
               ].map((item) => (
                 <li
                   key={item}

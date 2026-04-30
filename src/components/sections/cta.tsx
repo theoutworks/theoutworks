@@ -36,14 +36,15 @@ export function CTA() {
               viewport={{ once: true }}
               className="text-accent mb-4 text-sm font-medium tracking-widest uppercase"
             >
-              Ready to delegate?
+              Got a project in mind?
             </motion.p>
             <h2 className="font-display mb-4 text-3xl font-bold sm:text-4xl md:text-6xl">
-              Stop doing everything yourself
+              You have better things to do
             </h2>
             <p className="text-muted mx-auto mb-8 max-w-xl leading-relaxed">
-              Hand off the heavy lifting to our team. We&apos;ll build,
-              automate, and optimize — while you focus on running your business.
+              Hand off the engineering, automation, and grunt work to us.
+              You&apos;ll get weekly updates, milestone reviews, and code you
+              actually own, while your team stays focused on the business.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Link

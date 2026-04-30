@@ -24,10 +24,9 @@ export default function AltoAutomationPage() {
           Client: <span className="text-white">Skylets</span>
         </p>
         <p className="text-muted mb-12 text-lg leading-relaxed">
-          An end-to-end automation pipeline for the Alto property management
-          platform — a web scraper that harvests property images from student
-          accommodation websites, and an uploader that automates browser-based
-          bulk listing creation.
+          A property management company was spending days manually uploading
+          hundreds of listings. We built a scraper and an automated uploader
+          that turned the whole process into a single command.
         </p>
 
         {/* Content */}
@@ -37,12 +36,10 @@ export default function AltoAutomationPage() {
               <Globe className="text-accent h-6 w-6" /> The Challenge
             </h2>
             <p className="text-muted leading-relaxed">
-              Operators were manually uploading each property listing and its
-              images one-by-one through the Alto web UI. With hundreds of
-              properties across 15+ UK cities (Newcastle, Manchester,
-              Birmingham, Glasgow, Leicester, Liverpool, Nottingham, Sheffield,
-              and more), this process consumed days of repetitive work for every
-              batch update.
+              Operators were uploading each property listing and its images
+              one-by-one through the Alto web UI. With hundreds of properties
+              across 15+ UK cities, every batch update consumed days of
+              repetitive copy-paste work.
             </p>
           </div>
 
@@ -55,11 +52,11 @@ export default function AltoAutomationPage() {
             </p>
             <ul className="space-y-3">
               {[
-                "Selenium-driven scraper that crawls a 4-level hierarchy (cities, properties, rooms, images) with parallel headless Chromium instances",
-                "Site-agnostic architecture — new accommodation websites added by implementing a single config file",
-                "Python CLI uploader that reads Excel spreadsheets, validates data and images, then automates the entire Alto upload workflow",
-                "Fuzzy matching to map image folders to spreadsheet entries, catching mismatches before any browser automation runs",
-                "Incremental JSON persistence — resumes after interruptions without re-scraping",
+                "Selenium-driven scraper that crawls a 4-level hierarchy (cities, properties, rooms, images) with parallel headless browsers. Handles thousands of pages without manual intervention",
+                "Site-agnostic architecture: adding a new accommodation website means writing one config file, not rebuilding the scraper",
+                "Python CLI uploader that reads Excel spreadsheets, validates everything, then automates the full Alto upload workflow end-to-end",
+                "Fuzzy matching to map image folders to spreadsheet entries, catching mismatches before any browser automation runs so bad data never makes it to production",
+                "Incremental JSON persistence: if a run gets interrupted, it picks up where it left off instead of starting over",
               ].map((item) => (
                 <li
                   key={item}
@@ -78,11 +75,10 @@ export default function AltoAutomationPage() {
             </h2>
             <ul className="space-y-3">
               {[
-                "Eliminated days of manual work — batch runs replaced hand-uploading each listing and image through the web UI",
-                "Scraped and structured thousands of images across multiple accommodation websites into a complete catalog organized by city, property, and room",
-                "Processed hundreds of properties across 15+ UK cities",
-                "Caught data quality issues early via validation (missing images, misnamed folders, duplicate entries) before any automation runs",
-                "Built for extensibility — adding a new website requires only a single Python file",
+                "Turned days of manual uploading into a single CLI command. The team now runs batch updates in minutes instead of spending the better part of a week on them",
+                "Scraped and organized thousands of images across multiple accommodation websites into a structured catalog by city, property, and room",
+                "Caught data quality issues (missing images, misnamed folders, duplicate entries) automatically before anything touched the live platform",
+                "Built for extensibility: adding a new source website takes one Python file, not a project",
               ].map((item) => (
                 <li
                   key={item}
@@ -127,7 +123,7 @@ export default function AltoAutomationPage() {
             Have a process that needs automating?
           </h2>
           <p className="text-muted mb-8">
-            Let&apos;s talk about how we can save your team time.
+            Let&apos;s talk about what&apos;s eating up your team&apos;s time.
           </p>
           <Link
             href="/contact"

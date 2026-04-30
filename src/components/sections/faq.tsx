@@ -8,24 +8,24 @@ import { MouseGlow } from "@/components/mouse-glow"
 
 const faqs = [
   {
-    q: "How does outsourcing to The Outworks actually work?",
-    a: "After a discovery call, we audit your operations, create a roadmap, and start executing. You stay in the loop via weekly syncs, shared project boards, and milestone reviews. It's like adding a senior engineering team — without the hiring overhead.",
+    q: "How does working with you actually work?",
+    a: "We start with a discovery call to understand what you need. From there, we scope the work, give you a clear timeline, and get going. You'll get weekly updates, a shared project board, and milestone check-ins. Think of it as adding a senior engineering team without the hiring process.",
   },
   {
     q: "How long does a typical project take?",
-    a: "Branding and design projects take 4-6 weeks. Web and software development ranges from 6-12 weeks depending on complexity. We provide detailed timelines upfront and keep you informed at every step.",
+    a: "It depends on what we're building. A marketing site usually takes 4-6 weeks. Software and automation projects run 6-12 weeks depending on complexity. We'll give you a detailed timeline upfront so there are no surprises.",
   },
   {
-    q: "What does it cost to work with you?",
-    a: "Pricing depends on project scope. We offer competitive, transparent rates with no hidden fees. After an initial consultation, you'll receive a detailed proposal with clear deliverables and milestones.",
+    q: "What does it cost?",
+    a: "Pricing is based on project scope. No hourly billing, no surprise invoices. After our initial call, you'll get a proposal with clear deliverables, milestones, and a fixed price. You'll know exactly what you're paying for before we start.",
   },
   {
-    q: "How involved do I need to be?",
-    a: "As much or as little as you want. We handle the heavy lifting, but involve you at key milestones for feedback and approvals. Most clients spend 1-2 hours per week on check-ins.",
+    q: "How much of my time will this take?",
+    a: "Not much. We handle the day-to-day work and only loop you in for feedback at key milestones. Most clients spend about 1-2 hours a week on check-ins. You set the level of involvement that works for you.",
   },
   {
     q: "Can you work with our existing codebase and tools?",
-    a: "Absolutely. We integrate with your existing tech stack, workflows, and tools. Whether it's your repo, CI/CD pipeline, or project management tool — we adapt to how your team already works.",
+    a: "Yes. We'll work in your repo, your CI/CD pipeline, your project management tool, whatever your team already uses. No forced migrations, no new platforms to learn.",
   },
 ]
 

@@ -10,7 +10,7 @@ const projects = [
     client: "Skylets",
     category: "Automation & Scraping",
     description:
-      "End-to-end scraping and upload pipeline for the Alto property platform — eliminating days of manual work across hundreds of properties in 15+ UK cities.",
+      "End-to-end scraping and upload pipeline for the Alto property platform, eliminating days of manual work across hundreds of properties in 15+ UK cities.",
   },
   {
     slug: "future-offshore",
@@ -18,7 +18,7 @@ const projects = [
     client: "Future Offshore",
     category: "Web Development",
     description:
-      "Full corporate web presence for an offshore engineering firm — designed, built, and deployed to the edge on Cloudflare Workers.",
+      "Full corporate web presence for an offshore engineering firm. Designed, built, and deployed to the edge on Cloudflare Workers.",
   },
 ]
 
@@ -30,8 +30,9 @@ export default function ProjectsPage() {
           Our <span className="text-accent">Projects</span>
         </h1>
         <p className="text-muted mb-16 max-w-2xl text-lg leading-relaxed">
-          Real work we&apos;ve delivered for real clients — from automation
-          pipelines to full web platforms.
+          Here&apos;s what we&apos;ve built for clients, from automation
+          pipelines that save days of manual work to full web platforms deployed
+          to the edge.
         </p>
 
         <div className="grid gap-6 md:grid-cols-2">

@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "randomuser.me" },
     ],
   },
+  allowedDevOrigins: ["demo.guneet.dev"],
 }
 
 export default nextConfig

@@ -9,31 +9,31 @@ import { MouseGlow } from "@/components/mouse-glow"
 
 const testimonials = [
   {
-    text: "They're a true partner in our growth. Their work has been instrumental in helping us reach new heights, and we look forward to continuing our commercial relationship.",
-    name: "Farhan Ahmed",
-    company: "EchoWave Tech",
+    text: "We handed them a messy codebase and a tight deadline. They cleaned it up, shipped the feature, and somehow made it look easy. We've kept working with them since.",
+    name: "Client",
+    company: "SaaS Startup",
     role: "CTO",
     avatar: "https://randomuser.me/api/portraits/men/45.jpg",
   },
   {
-    text: "Their team took the time to truly understand our vision and delivered a brand identity that exceeded our expectations. The feedback from our customers has been positive.",
-    name: "Omeed Karimi",
-    company: "Eagle Aid",
-    role: "Founder",
+    text: "They automated a process that used to eat up two full days every week. Now it runs in the background and we barely think about it. Genuinely wish we'd done this sooner.",
+    name: "Client",
+    company: "Property Management",
+    role: "Operations Lead",
     avatar: "https://randomuser.me/api/portraits/men/22.jpg",
   },
   {
-    text: "The Outworks brought our ideas to life in ways we never imagined. Their innovative approach and attention to detail made our project a huge success. Highly recommended.",
-    name: "Aarush Goyal",
-    company: "Automation Company",
-    role: "CEO",
+    text: "Most agencies talk a big game and then deliver something generic. These guys actually listened, asked hard questions, and built exactly what we needed. No fluff.",
+    name: "Client",
+    company: "Engineering Firm",
+    role: "Founder",
     avatar: "https://randomuser.me/api/portraits/men/36.jpg",
   },
   {
-    text: "We came with a challenge, and they delivered beyond our expectations. Their team was not only creative but also strategic, helping us navigate the digital landscape with ease.",
-    name: "Liam Copping",
-    company: "Prosper Labs Ltd",
-    role: "Managing Director",
+    text: "We didn't have the budget to hire a full dev team, so we outsourced to The Outworks instead. Best call we made. Shipped our product three months ahead of schedule.",
+    name: "Client",
+    company: "Early-Stage Startup",
+    role: "CEO",
     avatar: "https://randomuser.me/api/portraits/men/52.jpg",
   },
 ]
@@ -75,12 +75,11 @@ export function Testimonials() {
             Testimonials
           </p>
           <h2 className="font-display mb-4 text-4xl font-bold md:text-5xl">
-            Trusted by industry leaders and{" "}
-            <span className="text-accent">loved by clients</span>
+            What our <span className="text-accent">clients say</span>
           </h2>
           <p className="text-muted mx-auto max-w-2xl leading-relaxed">
-            Don&apos;t take our word for it — hear what our partners have to say
-            about outsourcing their work to us.
+            Real feedback from teams who outsourced their engineering and
+            automation work to us.
           </p>
         </motion.div>
 

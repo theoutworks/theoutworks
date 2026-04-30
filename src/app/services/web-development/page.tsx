@@ -16,37 +16,37 @@ const features = [
     icon: <Layers className="text-accent h-6 w-6" />,
     title: "Frontend & Backend",
     description:
-      "We build both sides of your application using modern frameworks like React, Next.js, Node.js, and more — ensuring seamless integration.",
+      "We build both sides of your application. React, Next.js, Node.js, whatever fits best. One team, one codebase, no integration headaches.",
   },
   {
     icon: <Zap className="text-accent h-6 w-6" />,
     title: "High Performance",
     description:
-      "Every line of code is optimized for speed. We deliver lightning-fast load times and smooth interactions that keep users engaged.",
+      "Fast pages keep users around. We optimize every route for speed: server rendering, code splitting, lazy loading. Nothing feels sluggish.",
   },
   {
     icon: <Smartphone className="text-accent h-6 w-6" />,
     title: "Responsive Design",
     description:
-      "Pixel-perfect on every device. From mobile to ultrawide, your application looks and works flawlessly everywhere.",
+      "Your app works on phones, tablets, and desktops without compromise. We test across devices so you don't have to.",
   },
   {
     icon: <Server className="text-accent h-6 w-6" />,
     title: "Scalable Infrastructure",
     description:
-      "Built to grow with you. Our architectures handle traffic spikes and scale horizontally without breaking a sweat.",
+      "We architect for growth. Whether you're serving 100 users or 100,000, the infrastructure handles it without a rewrite.",
   },
   {
     icon: <Shield className="text-accent h-6 w-6" />,
     title: "Security First",
     description:
-      "Authentication, encryption, and best practices baked in from day one — not bolted on as an afterthought.",
+      "Auth, encryption, input validation, and security headers are built in from day one. Not patched in after an incident.",
   },
   {
     icon: <Globe className="text-accent h-6 w-6" />,
     title: "API Development",
     description:
-      "RESTful and GraphQL APIs designed for reliability, documentation, and easy integration with third-party services.",
+      "Clean REST or GraphQL APIs with solid documentation. Easy for your team (or third parties) to integrate with.",
   },
 ]
 
@@ -93,15 +93,15 @@ export default function WebDevelopmentPage() {
             Full Stack <span className="text-accent">Web Development</span>
           </h1>
           <p className="text-muted mb-8 text-lg leading-relaxed">
-            We build robust, scalable web applications from front to back.
-            Modern frameworks, performant APIs, and seamless user experiences —
-            all tailored to your business needs.
+            From marketing sites to complex web apps, we handle the full stack:
+            frontend, backend, APIs, and deployment. You get a fast, polished
+            product that works on every device and scales when you need it to.
           </p>
           <Link
             href="/contact"
             className="bg-accent hover:bg-accent-dim inline-flex items-center gap-2 rounded-full px-7 py-3.5 font-semibold text-black transition"
           >
-            Start your project <ArrowRight size={16} />
+            Talk to us about your project <ArrowRight size={16} />
           </Link>
         </div>
 
@@ -150,11 +150,11 @@ export default function WebDevelopmentPage() {
         {/* CTA */}
         <div className="bg-dark-card border-dark-border rounded-3xl border p-6 text-center sm:p-8 md:p-12">
           <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-            Ready to build something great?
+            Got something you need built?
           </h2>
           <p className="text-muted mx-auto mb-8 max-w-xl">
-            Let&apos;s discuss your project and find the perfect technical
-            solution for your business.
+            Let&apos;s talk through what you need and figure out the best way to
+            build it.
           </p>
           <Link
             href="/contact"

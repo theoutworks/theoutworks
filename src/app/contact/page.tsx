@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from "lucide-react"
+import { Mail, MapPin } from "lucide-react"
 
 import { env } from "@/env"
 
@@ -11,11 +11,11 @@ export default function ContactPage() {
     <main className="pt-24 pb-16">
       <section className="mx-auto max-w-7xl px-6 py-16">
         <h1 className="font-display mb-6 text-3xl font-bold sm:text-5xl md:text-6xl">
-          Book a <span className="text-accent">discovery call</span>
+          Let&apos;s <span className="text-accent">talk</span>
         </h1>
         <p className="text-muted mb-16 max-w-2xl text-lg leading-relaxed">
-          Tell us about your project and we&apos;ll get back to you within 24
-          hours to schedule a call.
+          Tell us what you&apos;re working on and we&apos;ll get back to you
+          within 24 hours to set up a call.
         </p>
 
         <div className="grid gap-12 md:grid-cols-2">
@@ -28,11 +28,6 @@ export default function ContactPage() {
                 icon: <Mail className="text-accent h-5 w-5" />,
                 label: "Email",
                 value: contactEmail,
-              },
-              {
-                icon: <Phone className="text-accent h-5 w-5" />,
-                label: "Phone",
-                value: "+1 (555) 123-4567",
               },
               {
                 icon: <MapPin className="text-accent h-5 w-5" />,

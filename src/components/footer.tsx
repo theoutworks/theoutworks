@@ -20,8 +20,8 @@ export function Footer() {
               <h3 className="font-display text-xl font-bold">the outworks</h3>
             </div>
             <p className="text-muted mb-6 text-sm leading-relaxed">
-              Outsource your work. We handle engineering, automation, and
-              digital operations — so you can focus on what matters.
+              Engineering, automation, and digital ops, outsourced to a team
+              that actually ships.
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social) => (
@@ -107,10 +107,10 @@ export function Footer() {
 
           <div>
             <h4 className="text-muted mb-4 text-sm font-semibold tracking-wider uppercase">
-              Ready to outsource?
+              Got a project?
             </h4>
             <p className="text-muted mb-4 text-sm leading-relaxed">
-              Let&apos;s talk about what we can take off your plate.
+              Tell us what you need and we&apos;ll take it from there.
             </p>
             <Link
               href="/contact"
@@ -125,9 +125,7 @@ export function Footer() {
           <p>
             &copy; {new Date().getFullYear()} The Outworks. All rights reserved.
           </p>
-          <p className="text-muted/60">
-            Outsource your work. Scale your business.
-          </p>
+          <p className="text-muted/60">We build it. You run the business.</p>
         </div>
       </div>
     </footer>

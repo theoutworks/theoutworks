@@ -10,7 +10,7 @@ const services = [
     icon: <Globe className="text-accent h-8 w-8" />,
     title: "Full Stack Web Development",
     description:
-      "We build robust, scalable web applications from front to back. Modern frameworks, performant APIs, and seamless user experiences — all tailored to your business needs.",
+      "Marketing sites, web apps, dashboards. We build the whole thing from front to back. You get clean code, fast load times, and something your users actually enjoy using.",
     image:
       "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&q=80",
   },
@@ -19,7 +19,7 @@ const services = [
     icon: <Bot className="text-accent h-8 w-8" />,
     title: "AI & Automation",
     description:
-      "Leverage the power of artificial intelligence and automation to streamline your workflows, reduce costs, and scale your business efficiently.",
+      "Got a process that eats up hours every week? We turn it into something that runs itself. AI agents, workflow automation, and integrations that plug into the tools you already use.",
     image:
       "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
   },
@@ -28,7 +28,7 @@ const services = [
     icon: <Database className="text-accent h-8 w-8" />,
     title: "Data Scraping",
     description:
-      "Extract valuable data from the web with our reliable, scalable scraping solutions. Get the insights you need to make data-driven decisions.",
+      "Need pricing data, property listings, or market intelligence? We build scrapers that pull exactly what you need, cleaned, structured, and delivered to your pipeline on a schedule.",
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
   },
@@ -37,7 +37,7 @@ const services = [
     icon: <Code className="text-accent h-8 w-8" />,
     title: "Software Development",
     description:
-      "Custom software solutions engineered for performance and reliability. From desktop apps to complex systems, we deliver production-ready code that scales.",
+      "When off-the-shelf tools don't cut it, we build custom software that does exactly what you need. APIs, internal tools, integrations. Production-ready and built to last.",
     image:
       "https://images.unsplash.com/photo-1605379399642-870262d3d051?w=800&q=80",
   },
@@ -51,8 +51,9 @@ export default function ServicesPage() {
           Our <span className="text-accent">Services</span>
         </h1>
         <p className="text-muted mb-16 max-w-2xl text-lg leading-relaxed">
-          We offer a comprehensive range of digital services designed to help
-          your brand stand out and succeed in the digital landscape.
+          Here&apos;s what we do. Each engagement is scoped, priced, and
+          delivered as a complete project. No retainers, no open-ended
+          timelines.
         </p>
 
         <div className="grid gap-6 md:grid-cols-2">

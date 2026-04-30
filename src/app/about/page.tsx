@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, Eye, Target, Users } from "lucide-react"
+import { ArrowRight, Code, Handshake, Lightbulb } from "lucide-react"
 
 export const metadata = { title: "About Us | The Outworks" }
 
@@ -24,27 +24,27 @@ export default function AboutPage() {
           About <span className="text-accent">The Outworks</span>
         </h1>
         <p className="text-muted mb-16 max-w-2xl text-lg leading-relaxed">
-          We are a team of engineers, designers, and strategists working in
-          harmony to deliver digital experiences that resonate with your
-          audience.
+          We&apos;re a small, senior team of engineers and builders. Companies
+          hire us when they need real work done (software, automation, data
+          pipelines) without the overhead of growing their own team.
         </p>
 
-        <div id="our-mission" className="mb-20 grid gap-6 md:grid-cols-3">
+        <div id="what-we-believe" className="mb-20 grid gap-6 md:grid-cols-3">
           {[
             {
-              icon: <Target className="text-accent h-6 w-6" />,
-              title: "Our Mission",
-              text: "To empower brands with innovative digital solutions that drive real, measurable growth.",
+              icon: <Code className="text-accent h-6 w-6" />,
+              title: "Ship Real Work",
+              text: "We don't do decks and workshops. We write code, deploy systems, and hand you something that works. Every engagement ends with production-ready output.",
             },
             {
-              icon: <Eye className="text-accent h-6 w-6" />,
-              title: "Our Vision",
-              text: "To be the go-to digital partner for businesses seeking creative excellence and strategic impact.",
+              icon: <Handshake className="text-accent h-6 w-6" />,
+              title: "No Surprises",
+              text: "Fixed scopes, clear timelines, weekly updates. You always know what we're working on, what's next, and what it costs. No scope creep, no mystery invoices.",
             },
             {
-              icon: <Users className="text-accent h-6 w-6" />,
-              title: "Our Values",
-              text: "Creativity, transparency, collaboration, and a relentless pursuit of quality in everything we do.",
+              icon: <Lightbulb className="text-accent h-6 w-6" />,
+              title: "Your Stack, Your Way",
+              text: "We work in your repo, your tools, your workflows. When the project's done, you own everything. No vendor lock-in, no proprietary frameworks to maintain.",
             },
           ].map((item) => (
             <div
@@ -58,15 +58,15 @@ export default function AboutPage() {
           ))}
         </div>
 
-        <div id="our-passion" className="mb-20 items-center gap-12 md:flex">
+        <div id="how-we-work" className="mb-20 items-center gap-12 md:flex">
           <div className="md:flex-1">
-            <h2 className="mb-6 text-3xl font-bold">Our Passion</h2>
+            <h2 className="mb-6 text-3xl font-bold">How We Work</h2>
             <p className="text-muted leading-relaxed">
-              Every project we take on is fuelled by a genuine passion for
-              digital craft. We don&apos;t just build websites &mdash; we create
-              experiences that leave lasting impressions. Our process blends
-              creative intuition with data-driven strategy to ensure every pixel
-              serves a purpose.
+              We keep things simple. You tell us what you need, we figure out
+              the best way to build it, and then we go build it. Along the way
+              you get milestone demos, access to our shared project board, and a
+              direct line to the people doing the work. No account manager
+              reading from a script.
             </p>
           </div>
           <div className="relative mt-8 h-48 flex-shrink-0 overflow-hidden rounded-2xl sm:h-64 md:mt-0 md:w-96">
@@ -80,8 +80,8 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div id="meet-the-team" className="mb-8">
-          <h2 className="mb-6 text-3xl font-bold">Meet the Team</h2>
+        <div id="the-team" className="mb-8">
+          <h2 className="mb-6 text-3xl font-bold">The Team</h2>
           <div className="items-center gap-12 md:flex">
             <div className="relative mt-0 mb-8 h-48 flex-shrink-0 overflow-hidden rounded-2xl sm:h-64 md:mb-0 md:w-96">
               <Image
@@ -94,9 +94,10 @@ export default function AboutPage() {
             </div>
             <div className="md:flex-1">
               <p className="text-muted mb-8 leading-relaxed">
-                Our diverse team brings together expertise in design,
-                development, marketing, and strategy. Together, we turn
-                ambitious ideas into digital realities.
+                We&apos;re engineers who got tired of watching projects stall
+                because teams were stretched too thin. So we built the kind of
+                outsourcing partner we&apos;d want to hire ourselves: senior
+                people, clear communication, and work that actually ships.
               </p>
               <Link
                 href="/contact"

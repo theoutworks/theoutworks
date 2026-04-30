@@ -16,37 +16,37 @@ const features = [
     icon: <Search className="text-accent h-6 w-6" />,
     title: "Targeted Extraction",
     description:
-      "We build scrapers that pull exactly the data you need — structured, clean, and ready for analysis.",
+      "We build scrapers that pull exactly the fields you care about, structured, deduplicated, and ready for your database or spreadsheet.",
   },
   {
     icon: <Gauge className="text-accent h-6 w-6" />,
     title: "High Volume & Speed",
     description:
-      "Capable of processing millions of records efficiently with distributed scraping architecture.",
+      "Distributed architecture that handles millions of pages without breaking. We scale up when you need volume.",
   },
   {
     icon: <Filter className="text-accent h-6 w-6" />,
     title: "Data Cleaning & Formatting",
     description:
-      "Raw data is transformed into structured formats — CSV, JSON, databases — ready for your pipeline.",
+      "Raw HTML becomes clean CSV, JSON, or database rows. We handle the parsing, deduplication, and normalization.",
   },
   {
     icon: <RefreshCw className="text-accent h-6 w-6" />,
     title: "Scheduled & Real-Time",
     description:
-      "Set it and forget it. Automated schedules keep your data fresh, or get real-time feeds as pages update.",
+      "Run scrapes on a schedule (hourly, daily, weekly) or get real-time feeds as pages change. Your data stays fresh without manual effort.",
   },
   {
     icon: <ShieldCheck className="text-accent h-6 w-6" />,
     title: "Compliance & Ethics",
     description:
-      "We operate within legal boundaries, respecting robots.txt and terms of service while getting you the data you need.",
+      "We respect robots.txt and terms of service. You get the data you need without legal headaches.",
   },
   {
     icon: <Database className="text-accent h-6 w-6" />,
     title: "Custom Pipelines",
     description:
-      "End-to-end data pipelines that scrape, process, store, and deliver insights directly to your tools.",
+      "Full pipelines that scrape, transform, store, and deliver data to your tools. Airtable, Google Sheets, your database, wherever you need it.",
   },
 ]
 
@@ -75,15 +75,16 @@ export default function DataScrapingPage() {
             Data <span className="text-accent">Scraping</span>
           </h1>
           <p className="text-muted mb-8 text-lg leading-relaxed">
-            Extract valuable data from the web with our reliable, scalable
-            scraping solutions. Get the insights you need to make data-driven
-            decisions.
+            Need pricing data from competitors? Property listings across 50
+            sites? Market intelligence updated daily? We build scrapers that
+            pull exactly what you need, cleaned, structured, and delivered to
+            your pipeline.
           </p>
           <Link
             href="/contact"
             className="bg-accent hover:bg-accent-dim inline-flex items-center gap-2 rounded-full px-7 py-3.5 font-semibold text-black transition"
           >
-            Start your project <ArrowRight size={16} />
+            Tell us what data you need <ArrowRight size={16} />
           </Link>
         </div>
 

@@ -16,37 +16,37 @@ const features = [
     icon: <Code className="text-accent h-6 w-6" />,
     title: "Custom Applications",
     description:
-      "Purpose-built software tailored to your exact business requirements — no off-the-shelf compromises.",
+      "Built for your exact requirements, not an off-the-shelf tool with workarounds taped on top.",
   },
   {
     icon: <Cpu className="text-accent h-6 w-6" />,
     title: "System Architecture",
     description:
-      "Scalable, maintainable architectures designed for long-term growth and performance under load.",
+      "We design systems that grow with you. Clean architecture now saves you from expensive rewrites later.",
   },
   {
     icon: <Blocks className="text-accent h-6 w-6" />,
     title: "Microservices & APIs",
     description:
-      "Modular, decoupled services that communicate cleanly — making your system flexible and easy to extend.",
+      "Loosely coupled services that talk to each other cleanly. Easy to extend, easy to debug, easy to maintain.",
   },
   {
     icon: <MonitorSmartphone className="text-accent h-6 w-6" />,
     title: "Cross-Platform",
     description:
-      "Desktop, mobile, or cloud — we build for the platforms your users are on with consistent experiences.",
+      "Desktop, mobile, web, or CLI. We build for wherever your users are, with a consistent experience across platforms.",
   },
   {
     icon: <TestTube className="text-accent h-6 w-6" />,
     title: "Quality Assurance",
     description:
-      "Rigorous testing at every stage — unit, integration, end-to-end — so bugs are caught before users ever see them.",
+      "Unit tests, integration tests, end-to-end tests. Bugs get caught in CI, not by your users.",
   },
   {
     icon: <GitBranch className="text-accent h-6 w-6" />,
     title: "CI/CD & DevOps",
     description:
-      "Automated pipelines for continuous delivery. Ship features fast and with confidence.",
+      "Automated build, test, and deploy pipelines. Push to main, ship to production. With confidence.",
   },
 ]
 
@@ -75,15 +75,15 @@ export default function SoftwareDevelopmentPage() {
             Software <span className="text-accent">Development</span>
           </h1>
           <p className="text-muted mb-8 text-lg leading-relaxed">
-            Custom software solutions engineered for performance and
-            reliability. From desktop apps to complex systems, we deliver
-            production-ready code that scales.
+            When off-the-shelf tools don&apos;t cut it, we build custom software
+            that does exactly what you need. APIs, internal tools, integrations,
+            CLI apps. Production-ready and built to last.
           </p>
           <Link
             href="/contact"
             className="bg-accent hover:bg-accent-dim inline-flex items-center gap-2 rounded-full px-7 py-3.5 font-semibold text-black transition"
           >
-            Start your project <ArrowRight size={16} />
+            Describe your problem <ArrowRight size={16} />
           </Link>
         </div>
 
@@ -127,11 +127,11 @@ export default function SoftwareDevelopmentPage() {
         {/* CTA */}
         <div className="bg-dark-card border-dark-border rounded-3xl border p-6 text-center sm:p-8 md:p-12">
           <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-            Have a complex problem to solve?
+            Got a problem that needs custom software?
           </h2>
           <p className="text-muted mx-auto mb-8 max-w-xl">
-            Let&apos;s talk architecture and build software that gives you a
-            competitive edge.
+            Tell us what you&apos;re trying to solve and we&apos;ll figure out
+            the right architecture.
           </p>
           <Link
             href="/contact"
